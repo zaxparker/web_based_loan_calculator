@@ -1,0 +1,105 @@
+body {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-optical-sizing: auto;
+    font-style: normal;
+    }
+
+  h2 {
+    font-family: sans-serif;
+    font-weight: 500;
+    flex: 1 1 30px;
+    color: white;
+    margin: 10px;
+    }
+
+.flex_box {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;    
+    padding-bottom: 20px;
+    max-width: 600px;
+    min-width: 100px;
+    height: auto;
+    background-color:#292929;
+    border: 1px solid #292929;
+    border-radius: 8px;
+    }
+
+.flex_child_one, .flex_child_two, .flex_child_three, .flex_child_four, .flex_child_five {
+    flex: 1;
+    flex-shrink: 1;
+    display: flex;
+    margin: 10px;
+    background-color: #292929;
+    border-radius: 5px;
+    font-size: 15px;
+    }
+
+.loan_amount_input, .interest_rate_input, .select_input {
+    flex: 1;
+    flex-shrink: 1;
+    padding: 20px;
+    height: auto;
+    border: 1px solid #292929;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    }
+
+button {
+    flex: 1;
+    flex-shrink: 1;
+    background-color: white;
+    color:#292929;
+    font-size: 15px;
+    border: 1px solid white;
+    border-right-color:#292929;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    }
+
+button:hover {
+    background-color: #292929;
+    color: white;
+    }
+
+.result {
+    color: #292929;
+    background-color: white;
+    flex: 2;
+    text-align: center;
+    border: 1px solid white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    }
+
+.select {
+    flex: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    padding: 20px;
+    margin-left: 10px;
+    height: auto;
+    border: 1px solid #292929;
+    border-radius: 5px;
+    font-size: 15px;
+    }
+    .select_two {
+        flex: 1;
+        flex-shrink: 1;
+        min-width: 0;
+        padding: 20px;
+        margin-left: 10px;
+        height: auto;
+        border: 1px solid #292929;
+        border-radius: 5px;
+        font-size: 15px;
+        }
+    .month_year_select {
+        flex: 0.5;
+        display: flex;
+    }
