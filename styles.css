@@ -39,6 +39,10 @@ body {
     font-size: 15px;
     }
 
+    .flex_child_five {
+        height: 40px;
+    }
+
 .loan_amount_input, .interest_rate_input, .select_input {
     flex: 1;
     flex-shrink: 1;
