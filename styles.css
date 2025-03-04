@@ -34,7 +34,7 @@ body {
     gap: 12px;
     }
 
-.flex_child_one, .flex_child_two, .flex_child_three, .flex_child_four, .flex_child_five {
+.flex_child_one, .flex_child_two, .flex_child_three, .flex_child_four, .flex_child_five, .flex_child_six {
     flex: 1;
     flex-shrink: 1;
     display: flex;
@@ -61,7 +61,7 @@ body {
     font-size: 15px;
     }
 
-.button {
+.calculate_button {
     flex: 1;
     flex-shrink: 1;
     background-color: white;
@@ -73,7 +73,7 @@ body {
     border-bottom-left-radius: 5px;
     }
 
-.button:hover {
+.calculate_button:hover {
     background-color: #292929;
     color: white;
     }
@@ -92,6 +92,7 @@ body {
     flex: 1;
     flex-shrink: 1;
     min-width: 200px;
+    min-height: 20px;
     padding: 20px;
     height: auto;
     border: 1px solid #292929;
@@ -103,11 +104,13 @@ body {
     flex: 1;
     flex-shrink: 1;
     min-width: 200px;
+    min-height: 20px;
     padding: 20px;
     height: auto;
     border: 1px solid #292929;
     border-radius: 5px;
     font-size: 15px;
+    -webkit-appearance: textfield;
     }
 
 .select_input {
@@ -120,6 +123,7 @@ body {
     background-color: white;
     border-radius: 5px;
     font-size: 15px;
+    -webkit-appearance: textfield;
     }
 
 /*.month_year_select {
@@ -127,3 +131,21 @@ body {
     flex-shrink: 1;
     display: flex;
     }*/
+
+.clear_button {
+    flex: 1;
+    flex-shrink: 1;
+    padding: 15px;
+    max-width: 100px;
+    background-color: white;
+    color:#292929;
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: auto;
+    }
+
+    .clear_button:hover {
+    background-color: #292929; 
+    color: white;
+    }
