@@ -1,3 +1,7 @@
+html {
+ margin: 0; 
+}
+
 body {
     font-family: sans-serif;
     font-weight: 500;
@@ -17,7 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 25px;
     padding-left: 20px;
     padding-right: 20px;    
     padding-bottom: 20px;
@@ -27,23 +31,26 @@ body {
     background-color:#292929;
     border: 1px solid #292929;
     border-radius: 8px;
+    gap: 12px;
     }
 
 .flex_child_one, .flex_child_two, .flex_child_three, .flex_child_four, .flex_child_five {
     flex: 1;
     flex-shrink: 1;
     display: flex;
-    margin: 10px;
     background-color: #292929;
     border-radius: 5px;
     font-size: 15px;
     }
 
-    .flex_child_five {
-        height: 40px;
+.flex_child_four {
+    flex-wrap: wrap-reverse;
+    gap: 2px;
     }
 
-.loan_amount_input, .interest_rate_input, .select_input {
+
+
+.loan_amount_input, .interest_rate_input {
     flex: 1;
     flex-shrink: 1;
     padding: 20px;
@@ -54,7 +61,7 @@ body {
     font-size: 15px;
     }
 
-button {
+.button {
     flex: 1;
     flex-shrink: 1;
     background-color: white;
@@ -66,7 +73,7 @@ button {
     border-bottom-left-radius: 5px;
     }
 
-button:hover {
+.button:hover {
     background-color: #292929;
     color: white;
     }
@@ -84,26 +91,39 @@ button:hover {
 .select {
     flex: 1;
     flex-shrink: 1;
-    min-width: 0;
+    min-width: 200px;
     padding: 20px;
-    margin-left: 10px;
     height: auto;
     border: 1px solid #292929;
     border-radius: 5px;
     font-size: 15px;
     }
-    .select_two {
-        flex: 1;
-        flex-shrink: 1;
-        min-width: 0;
-        padding: 20px;
-        margin-left: 10px;
-        height: auto;
-        border: 1px solid #292929;
-        border-radius: 5px;
-        font-size: 15px;
-        }
-    .month_year_select {
-        flex: 0.5;
-        display: flex;
+
+.select_two {
+    flex: 1;
+    flex-shrink: 1;
+    min-width: 200px;
+    padding: 20px;
+    height: auto;
+    border: 1px solid #292929;
+    border-radius: 5px;
+    font-size: 15px;
     }
+
+.select_input {
+    flex: 1;
+    flex-shrink: 1;
+    min-width: 100px;
+    padding: 20px;
+    height: auto;
+    border: 1px solid #292929;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    }
+
+/*.month_year_select {
+    flex: 0.5;
+    flex-shrink: 1;
+    display: flex;
+    }*/

@@ -15,24 +15,30 @@
 <div class = "flex_box">'
 
 <h2>Loan Amortization Calculator</h2>
+
+
 <div class = "flex_child_one">
 <input placeholder = "Loan Amount    e.g. 25000" type = "text" class = "loan_amount_input">
 </div>
+
+
 <div class = "flex_child_two">
 <input placeholder = "Interest Rate    e.g. 5.2% " type = "text" class = "interest_rate_input">
 </div>
 
+
 <div class = "flex_child_four">
 <input placeholder = "" type = "text" class = "select_input">
-<select class = "select" onchange="hide()">
-<option value = "payment_amount">Payment Amount</option>
-<option value = "number_of_months">Months/Years</option>
-</select>
 <select class = "select_two" name = "Months/Years">
 <option type = "radio" value = "months">Months</option>
 <option type = "radio" value = "years">Years</option>
 </select>
+<select class = "select" onchange="hide()">
+<option value = "number_of_months">Months/Years</option>
+<option value = "payment_amount">Payment Amount</option>
+</select>
 </div>
+
 
 <div class = "flex_child_five">
 <button onclick="get_data()" class = "button">Calculate</button>
@@ -41,7 +47,7 @@
 
 </div>
 
-
+<!-- <button onclick = "report_creation()">Create Report</button> -->
 
 </body>
 </html>

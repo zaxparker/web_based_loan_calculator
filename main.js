@@ -80,3 +80,18 @@ function calculate_months() {
     let result_display = document.querySelector(".result_text");
     result_display.textContent = loan_months + " Months";
 }
+
+
+
+//Report Generation 
+
+function report_creation() {
+
+
+
+
+
+
+
+    //window.open("report.html");
+}
