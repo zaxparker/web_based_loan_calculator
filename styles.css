@@ -98,6 +98,7 @@ body {
     border: 1px solid #292929;
     border-radius: 5px;
     font-size: 15px;
+    -webkit-appearance: textfield;
     }
 
 .select_two {
@@ -123,7 +124,6 @@ body {
     background-color: white;
     border-radius: 5px;
     font-size: 15px;
-    -webkit-appearance: textfield;
     }
 
 /*.month_year_select {
