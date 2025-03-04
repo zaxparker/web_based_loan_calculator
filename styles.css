@@ -104,7 +104,7 @@ body {
 
 
 .clear_button {
-    flex: 1;
+    flex: 1 0 auto;
     flex-shrink: 1;
     padding: 15px;
     background-color: lightgray;
@@ -116,8 +116,7 @@ body {
     }
 
     .calculate_button {
-    flex: 3;
-    flex-shrink: 1;
+    flex: 3 0 auto;
     padding: 15px;
     background-color: lightgray;
     color: #292929;
@@ -127,6 +126,18 @@ body {
     min-width: 100px
     }
     
+    .result {
+    color: #292929;
+    background-color: white;
+    padding: 15px;
+    flex: 3 0 auto;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    min-width: 200px;
+    }
+
+
     .calculate_button:hover {
     background-color: #292929;
     color:white;
@@ -137,13 +148,3 @@ body {
     color: white;
     }
     
-    .result {
-    color: #292929;
-    background-color: white;
-    padding: 15px;
-    flex: 3;
-    text-align: center;
-    border: 1px solid white;
-    border-radius: 5px;
-    min-width: 200px;
-    }
