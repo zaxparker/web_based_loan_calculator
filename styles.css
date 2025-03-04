@@ -48,71 +48,47 @@ body {
     gap: 2px;
     }
 
+.flex_child_five {
+    flex-wrap: wrap;
+    gap: 4px;
+    }
 
 
 .loan_amount_input, .interest_rate_input {
     flex: 1;
     flex-shrink: 1;
     padding: 20px;
-    height: auto;
     border: 1px solid #292929;
     background-color: white;
     border-radius: 5px;
     font-size: 15px;
-    }
-
-.calculate_button {
-    flex: 1;
-    flex-shrink: 1;
-    background-color: white;
-    color:#292929;
-    font-size: 15px;
-    border: 1px solid white;
-    border-right-color:#292929;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    }
-
-.calculate_button:hover {
-    background-color: #292929;
-    color: white;
-    }
-
-.result {
-    color: #292929;
-    background-color: white;
-    flex: 2;
-    text-align: center;
-    border: 1px solid white;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
     }
 
 .select {
     flex: 1;
     flex-shrink: 1;
     min-width: 200px;
-    min-height: 20px;
     padding: 20px;
     height: auto;
     border: 1px solid #292929;
+    background-color: lightgray;
+    color: #292929;
     border-radius: 5px;
     font-size: 15px;
-    -webkit-appearance: textfield;
     }
 
 .select_two {
     flex: 1;
     flex-shrink: 1;
     min-width: 200px;
-    min-height: 20px;
     padding: 20px;
     height: auto;
+    background-color: lightgray;
+    color: #292929;
     border: 1px solid #292929;
     border-radius: 5px;
     font-size: 15px;
-    -webkit-appearance: textfield;
-    }
+}
 
 .select_input {
     flex: 1;
@@ -126,26 +102,48 @@ body {
     font-size: 15px;
     }
 
-/*.month_year_select {
-    flex: 0.5;
-    flex-shrink: 1;
-    display: flex;
-    }*/
 
 .clear_button {
     flex: 1;
     flex-shrink: 1;
     padding: 15px;
-    max-width: 100px;
-    background-color: white;
+    background-color: lightgray;
     color:#292929;
     font-size: 15px;
-    border: 1px solid white;
+    border: 1px solid lightgray;
     border-radius: 5px;
-    height: auto;
+    min-width: 100px;
+    }
+
+    .calculate_button {
+    flex: 3;
+    flex-shrink: 1;
+    padding: 15px;
+    background-color: lightgray;
+    color: #292929;
+    font-size: 15px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    min-width: 100px
+    }
+    
+    .calculate_button:hover {
+    background-color: #292929;
+    color:white;
     }
 
     .clear_button:hover {
     background-color: #292929; 
     color: white;
+    }
+    
+    .result {
+    color: #292929;
+    background-color: white;
+    padding: 15px;
+    flex: 3;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    min-width: 200px;
     }
