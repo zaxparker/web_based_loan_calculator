@@ -55,7 +55,7 @@ let monthly_payment = loan_amount * (interest_rate_adjusted/temp_three);
  monthly_payment = monthly_payment.toFixed(2);
 
  //selects result html element and changes to calculation 
- let result_display = document.querySelector(".result");
+ let result_display = document.querySelector(".result_text");
  result_display.textContent = "Payment Per Month:  $" + monthly_payment;
 }
 
@@ -77,7 +77,7 @@ function calculate_months() {
     loan_months = Math.ceil(loan_months);
 
     //selects result html element and changes to calculation 
-    let result_display = document.querySelector(".result");
+    let result_display = document.querySelector(".result_text");
     result_display.textContent = loan_months + " Months";
 }
 
@@ -97,5 +97,5 @@ function clear_data() {
 document.querySelector(".loan_amount_input").value = "";
 document.querySelector(".interest_rate_input").value = "";
 document.querySelector(".select_input").value = "";
-document.querySelector(".result").textContent = "Result";
+document.querySelector(".result_text").textContent = "Result";
 }

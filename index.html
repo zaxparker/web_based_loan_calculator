@@ -9,13 +9,13 @@
     <title>Loan Amortization Calculator</title>
 </head>
 <body>
+<div class = "main_heading_div">
+<h2 class = "main_heading">Loan Amortization Calculator</h2>
+</div>
 
+<div class = "flex_box">
 
-
-<div class = "flex_box">'
-
-<h2>Loan Amortization Calculator</h2>
-
+<div class = "flex_box_calculate">
 
 <div class = "flex_child_one">
 <input placeholder = "Loan Amount    e.g. 25000" type = "text" class = "loan_amount_input">
@@ -27,7 +27,7 @@
 </div>
 
 
-<div class = "flex_child_four">
+<div class = "flex_child_three">
 
 <input placeholder = "...." type = "text" class = "select_input">
 
@@ -44,16 +44,19 @@
 </div>
 
 
-<div class = "flex_child_five">
+<div class = "flex_child_four">
 <button onclick="get_data()" class = "calculate_button">Calculate</button>
 <button onclick = "clear_data()" class = "clear_button">Clear</button>    
-<div class = "result" >Result</div>
 </div>
 
 
-<div class = "flex_child_six">
+<div class = "flex_child_five">
 </div>
 
+</div>
+<div class = "flex_box_result">
+<div class = "result_container" ><h2 class = "result_text">Result</h2></div>
+</div>
 </div>
 
 <!-- <button onclick = "report_creation()">Create Report</button> -->
