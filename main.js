@@ -49,8 +49,9 @@ let interest_rate_adjusted = interest_rate/1200
 
 //if any input data is equal to NaN lets user know to enter valid inputs
 if (isNaN(loan_amount) || isNaN(interest_rate) || isNaN(number_of_months)) {
-    alert("Non Calculable. Please Enter Valid Inputs")
-    }
+    let result_display = document.querySelector(".result_text");
+    result_display.innerHTML = "Non Calculable." + "<br>" + "Please Enter Valid Inputs";
+}
 else {
 let temp_one = 1+interest_rate_adjusted;
 let temp_two = Math.pow(temp_one, -number_of_months);
@@ -62,7 +63,7 @@ let monthly_payment = loan_amount * (interest_rate_adjusted/temp_three);
 
  //selects result html element and changes to calculation 
  let result_display = document.querySelector(".result_text");
- result_display.textContent = "Payment Per Month:  $" + monthly_payment;
+ result_display.innerHTML = "Monthly Payment" + "<br>" + "$" + monthly_payment;
 }
 }
 
@@ -77,7 +78,8 @@ function calculate_months() {
 
     //if any input data is equal to NaN lets user know to enter valid inputs
     if (isNaN(loan_amount) || isNaN(interest_rate) || isNaN(payment_amount)) {
-    alert("Non Calculable. Please Enter Valid Inputs")
+        let result_display = document.querySelector(".result_text");
+        result_display.innerHTML = "Non Calculable." + "<br>" + "Please Enter Valid Inputs";
     }
     else {
     //formula to find loan months
@@ -88,7 +90,8 @@ function calculate_months() {
     
     //if the loan amount is a non calcuable amount informs user
     if (isNaN(loan_months)) {
-       alert("Payment amount is non calculable. Please enter a greater payment amount");
+       let result_display = document.querySelector(".result_text");
+       result_display.innerHTML = "Payment amount is non calculable." + "<br><br>" + "Please enter a greater payment amount";
     }
     else {
     //rounds final calculation up to nearest whole number
