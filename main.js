@@ -47,16 +47,23 @@ number_of_months = select_input;
 //adjusted intrest rate
 let interest_rate_adjusted = interest_rate/1200
 
+//if any input data is equal to NaN lets user know to enter valid inputs
+if (isNaN(loan_amount) || isNaN(interest_rate) || isNaN(number_of_months)) {
+    alert("Non Calcuable. Please Enter Valid Inputs")
+    }
+else {
 let temp_one = 1+interest_rate_adjusted;
 let temp_two = Math.pow(temp_one, -number_of_months);
 let temp_three = 1 - temp_two;
 let monthly_payment = loan_amount * (interest_rate_adjusted/temp_three);
+
 //rounds final calculation to two decimal places
  monthly_payment = monthly_payment.toFixed(2);
 
  //selects result html element and changes to calculation 
  let result_display = document.querySelector(".result_text");
  result_display.textContent = "Payment Per Month:  $" + monthly_payment;
+}
 }
 
 
@@ -68,28 +75,32 @@ function calculate_months() {
     //adjust interest rate from percentage to decimal
     interest_rate_adjusted = interest_rate/1200;
 
+    //if any input data is equal to NaN lets user know to enter valid inputs
+    if (isNaN(loan_amount) || isNaN(interest_rate) || isNaN(payment_amount)) {
+    alert("Non Calcuable. Please Enter Valid Inputs")
+    }
+    else {
     //formula to find loan months
     let temp_zero =  1 - (loan_amount/payment_amount) * interest_rate_adjusted;
     let temp_one = Math.log(temp_zero);
     let temp_two = Math.log(1 + interest_rate_adjusted);
     loan_months = -(temp_one/temp_two);
+    
+    //if the loan amount is a non calcuable amount informs user
+    if (isNaN(loan_months)) {
+       alert("Payment amount is non calcuable. Please enter a greater payment amount");
+    }
+    else {
     //rounds final calculation up to nearest whole number
     loan_months = Math.ceil(loan_months);
 
     //selects result html element and changes to calculation 
     let result_display = document.querySelector(".result_text");
     result_display.textContent = loan_months + " Months";
+    }
+}
 }
 
-
-//Report Generation 
-function report_creation() {
-
-    
-
-
-    //window.open("report.html");
-}
 
 
 //clears data from inputs
